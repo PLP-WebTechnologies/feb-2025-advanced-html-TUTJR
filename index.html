@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced HTML5 Elements and Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Things to Learn</h2>
+    <ol type="I">
+      <li>HTML5 Basics</li>
+      <li>CSS Styling</li>
+      <li>JavaScript Essentials</li>
+      <li>Responsive Design</li>
+      <li>Form Handling</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Inspiration Image</h2>
+    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Technology Inspiration" width="600">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jane Doe</td>
+          <td>Nairobi, Kenya</td>
+          <td>+254712345678</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>Kampala, Uganda</td>
+          <td>+256701234567</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Amina Ali</td>
+          <td>Juba, South Sudan</td>
+          <td>+211911223344</td>
+          <td>amina@example.com</td>
+        </tr>
+        <tr>
+          <td>Peter Okello</td>
+          <td>Dar es Salaam, Tanzania</td>
+          <td>+255789654321</td>
+          <td>peter@example.com</td>
+        </tr>
+        <tr>
+          <td>Lilian Wanjiru</td>
+          <td>Addis Ababa, Ethiopia</td>
+          <td>+251901112233</td>
+          <td>lilian@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Dropdown -->
+      <label for="country">Select Your Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Choose a country--</option>
+        <option value="ss">South Sudan</option>
+        <option value="ke">Kenya</option>
+        <option value="ug">Uganda</option>
+        <option value="et">Ethiopia</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female" style="display:inline;">Female</label>
+
+      <!-- Checkboxes -->
+      <label>Areas of Interest:</label>
+      <input type="checkbox" id="coding" name="interest" value="coding">
+      <label for="coding" style="display:inline;">Coding</label>
+      <input type="checkbox" id="design" name="interest" value="design">
+      <label for="design" style="display:inline;">Design</label>
+      <input type="checkbox" id="ai" name="interest" value="ai">
+      <label for="ai" style="display:inline;">AI & ML</label>
+
+      <!-- Submit Button -->
+      <br><br>
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <!-- Multimedia Section -->
+  <section>
+    <h2>Learning with Multimedia</h2>
+    <!-- Audio -->
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+</body>
+</html>
